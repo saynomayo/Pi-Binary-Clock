@@ -1,6 +1,11 @@
 #include "display.h"
 
 int main(void) {
-	pi_framebuffer_t *fb=getFrameBuffer();
-	return 0;
+	open_display();
+	if (____) {
+		display_time;
+	}
+	else {
+		close_display();
+	};
 }
