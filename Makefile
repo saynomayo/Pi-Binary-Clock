@@ -2,8 +2,8 @@ INCLUDE := -I ~/include
 LDFLAGS := -L ~/lib -lsense -lm
 
 all: clockdisplay
-clock: main.o display.o
-	cc -o clock main.o display.o $(LDFLAGS)
+clockdisplay: main.o display.o
+	cc -o clockdisplay main.o display.o $(LDFLAGS)
 
 clean:
 	rm -f *.o clockdisplay
