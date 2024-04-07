@@ -2,7 +2,7 @@
 
 int main(void) {
 	open_display();
-	display_colons();
 	sleep(1);
+	close_display();
 	return 0;
 }

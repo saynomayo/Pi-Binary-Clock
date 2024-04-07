@@ -17,9 +17,12 @@ sense_fb_bitmap_t *bm = NULL;
 int open_display(void) {
 	fb=getFrameBuffer();
 	bm=fb->bitmap;
+	display_colons();
 }
 
-void display_time(int hours, int minutes, int seconds);
+void display_time(int hours, int minutes, int seconds) {
+
+}
 
 void display_colons(void) {
 
@@ -238,4 +241,8 @@ void display_seconds(int seconds) {
 	}
 }
 
-void close_display(void);
+void close_display(void) {
+	clearFrameBuffer(fb,0);
+	sleep(1);
+	freeFrameBuffer(fb);
+}
