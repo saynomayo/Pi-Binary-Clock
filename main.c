@@ -7,7 +7,10 @@ int main(void) {
 	int hours;
 	int minutes;
 	int seconds;
+	//prepare LED array to display time
 	open_display();
+	//scan time from stdin, skip over colons and assign 
+	//everything relatively
 	scanf("%d:%d:%d", &hours, &minutes, &seconds);
 	//while time is 8 characters
 	while (1==1) {
@@ -16,7 +19,9 @@ int main(void) {
 		//display the time
 		display_time(hours, minutes, seconds);
 	}
+	//wait one second
 	sleep(1);
+	//exit program
 	close_display();
 	return 0;
 }
