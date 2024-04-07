@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include "sense.h"
+
 int open_display(void);
 
 void display_time(int hours, int minutes, int seconds);

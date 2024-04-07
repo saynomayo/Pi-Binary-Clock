@@ -10,7 +10,14 @@
 #define GREEN 0x07E0
 #define RED 0xF800
 
-int open_display(void);
+
+pi_framebuffer_t *fb = NULL;
+sense_fb_bitmap_t *bm = NULL;
+
+int open_display(void) {
+	fb=getFrameBuffer();
+	bm=fb->bitmap;
+}
 
 void display_time(int hours, int minutes, int seconds);
 
