@@ -15,6 +15,10 @@ pi_framebuffer_t *fb = NULL;
 sense_fb_bitmap_t *bm = NULL;
 
 int open_display(void) {
+// fb and bm are initialized (notice the lack of type), and
+// display colons is called in open_display
+// to me (Mekhai) this makes sense, because the colons are
+// a necessary part of the clock's environment.
 	fb=getFrameBuffer();
 	bm=fb->bitmap;
 	display_colons();
@@ -242,6 +246,8 @@ void display_seconds(int seconds) {
 }
 
 void close_display(void) {
+//Pretty self explanatory. the LED array is cleared
+//and one second later the program stops.
 	clearFrameBuffer(fb,0);
 	sleep(1);
 	freeFrameBuffer(fb);
