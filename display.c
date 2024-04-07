@@ -22,6 +22,7 @@ int open_display(void) {
 	fb=getFrameBuffer();
 	bm=fb->bitmap;
 	display_colons();
+	
 }
 
 void display_time(int hours, int minutes, int seconds) {
