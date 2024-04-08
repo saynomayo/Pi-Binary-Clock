@@ -21,12 +21,12 @@ int open_display(void) {
 // a necessary part of the clock's environment.
 	fb=getFrameBuffer();
 	bm=fb->bitmap;
-	display_colons();
-	
 }
 
 void display_time(int hours, int minutes, int seconds) {
-
+	display_hours(hours);
+	display_minutes(minutes);
+	display_seconds(seconds);
 }
 
 void display_colons(void) {

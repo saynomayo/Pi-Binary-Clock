@@ -9,18 +9,17 @@ int main(void) {
 	int seconds;
 	//prepare LED array to display time
 	open_display();
+	display_colons();
+	sleep(1);
 	//scan time from stdin, skip over colons and assign 
 	//everything relatively
+	//while time is 8 character
+	//continue scanning time
 	scanf("%d:%d:%d", &hours, &minutes, &seconds);
-	//while time is 8 characters
-	while (1==1) {
-		//continue scanning time
-		scanf("%d:%d:%d", &hours, &minutes, &seconds);
-		//display the time
-		display_time(hours, minutes, seconds);
-	}
-	//wait one second
+	display_time(hours, minutes, seconds);
 	sleep(1);
+	//display the time
+	//wait one second
 	//exit program
 	close_display();
 	return 0;
