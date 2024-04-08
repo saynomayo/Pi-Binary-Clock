@@ -10,14 +10,15 @@ int main(void) {
 	//prepare LED array to display time
 	open_display();
 	display_colons();
-	sleep(1);
-	//scan time from stdin, skip over colons and assign 
+	scanf("%d:%d:%d", &hours, &minutes, &seconds);
+	//scan time from stdin, skip over colons and assign
 	//everything relatively
 	//while time is 8 character
 	//continue scanning time
-	scanf("%d:%d:%d", &hours, &minutes, &seconds);
-	display_time(hours, minutes, seconds);
-	sleep(1);
+	while(1==1) {
+		scanf("%d:%d:%d", &hours, &minutes, &seconds);
+		display_time(hours, minutes, seconds);
+	}
 	//display the time
 	//wait one second
 	//exit program
