@@ -12,4 +12,4 @@ main.o: main.c display.h
 display.o: display.c display.h
 	cc -c display.c -I ~/include
 run:
-	./clock.sh
+	./clock.sh | ./clockdisplay

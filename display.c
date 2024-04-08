@@ -21,6 +21,7 @@ int open_display(void) {
 // a necessary part of the clock's environment.
 	fb=getFrameBuffer();
 	bm=fb->bitmap;
+	clearFrameBuffer(fb, 0);
 }
 
 void display_time(int hours, int minutes, int seconds) {
