@@ -186,7 +186,7 @@ void display_seconds(int seconds) {
 
 // Converting the seconds to binary
 
-        static char binary_seconds[5] ;
+        char binary_seconds[5] ;
         int i = 0 ;
 
         while (seconds > 0) {
