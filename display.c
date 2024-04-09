@@ -62,7 +62,7 @@ void display_hours(int hours) {
 	static char binary_hours[4] ;
 	int i = 0 ;
 
-	while (hours > 0) {
+	while (hours >= 0) {
 		int remainder = hours % 2 ;
 
 		binary_hours[i] = remainder + '0' ;
@@ -122,7 +122,7 @@ void display_minutes(int minutes) {
 	static char binary_minutes[5] ;
 	int i = 0 ;
 
-	while (minutes > 0) {
+	while (minutes >= 0) {
 		int remainder = minutes % 2 ;
 
 		binary_minutes[i] = remainder + '0' ;
@@ -186,10 +186,10 @@ void display_seconds(int seconds) {
 
 // Converting the seconds to binary
 
-        char binary_seconds[5] ;
+        static char binary_seconds[5] ;
         int i = 0 ;
 
-        while (seconds > 0) {
+        while (seconds >= 0) {
                 int remainder = seconds % 2 ;
 
                 binary_seconds[i] = remainder + '0' ;
