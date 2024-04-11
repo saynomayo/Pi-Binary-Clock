@@ -59,10 +59,10 @@ void display_hours(int hours) {
 
 // Converting the hour to binary
 
-	static char binary_hours[4] ;
+	static char binary_hours[5] ;
 	int i = 0 ;
 
-	while (hours >= 0) {
+	for (i=0;i<=5;i++) {
 		int remainder = hours % 2 ;
 
 		binary_hours[i] = remainder + '0' ;
@@ -119,17 +119,16 @@ void display_minutes(int minutes) {
 
 // Converting the minutes to binary
 
-	static char binary_minutes[5] ;
+	static char binary_minutes[6] ;
 	int i = 0 ;
 
-	while (minutes >= 0) {
+	for (i=0;i<=6;i++) {
 		int remainder = minutes % 2 ;
 
 		binary_minutes[i] = remainder + '0' ;
 
 		minutes = minutes / 2 ;
 
-		i++ ;
 	}
 
 // IT WILL CONVERT IT BACKWARDS
@@ -186,17 +185,16 @@ void display_seconds(int seconds) {
 
 // Converting the seconds to binary
 
-        static char binary_seconds[5] ;
+        static char binary_seconds[6] ;
         int i = 0 ;
 
-        while (seconds >= 0) {
+        for (i=0;i<=6;i++) {
                 int remainder = seconds % 2 ;
 
                 binary_seconds[i] = remainder + '0' ;
 
                 seconds = seconds / 2 ;
 
-                i++ ;
         }
 
 // IT WILL CONVERT IT BACKWARDS
