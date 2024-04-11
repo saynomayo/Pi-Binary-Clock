@@ -9,8 +9,6 @@ int main(void) {
 	int seconds;
 	//prepare LED array to display time
 	open_display();
-	display_colons();
-	sleep(1);
 	scanf("%d:%d:%d", &hours, &minutes, &seconds);
 	//scan time from stdin, skip over colons and assign
 	//everything relatively
