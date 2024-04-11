@@ -16,7 +16,7 @@ int main(void) {
 	//everything relatively
 	//while time is 8 character
 	//continue scanning time
-	while (1==1) {
+	while (hours>-1 && hours<24 && minutes>-1 && minutes<60 && seconds>-1 && seconds<60) {
 		scanf("%d:%d:%d", &hours, &minutes, &seconds);
 		display_time(hours, minutes, seconds);
 	}
