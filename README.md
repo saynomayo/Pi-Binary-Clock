@@ -1,7 +1,7 @@
 This Project is Managed and Developed by:
 
-Mekhai Waples (mwaples@udel.edu, 702710127),
-Raphael Daluz (rdaluz@udel.edu, 702692214)
+Mekhai Waples,
+Raphael Daluz (https://github.com/Raphael-Daluz)
 ----------------------------------------------------------------------
 # How to Compile
 
